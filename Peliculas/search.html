@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador - Yeison Molina Monsalve</title>
+    
+    <link rel="stylesheet" href="./css/search.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5a07f4c650.js" crossorigin="anonymous"></script>
+    <script src="./js/search.js"></script>
+</head>
+
+<body id="search">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./img/logo.png" width="30" height="30" alt="Películas">
+            </a>
+            <div class="navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./now-playing.html">Últimos lanzamientos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./popular.html">Populares</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./search.html">Buscador</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Buscador -->
+    <div class="container mt-5">
+        <h1 class="text-center mb-5">Buscador de películas</h1>
+        <input id="search-movie" class="form-control" placeholder="Busca una película" onkeyup="searchMovies()" />
+        <div class="row list-cards"></div>
+    </div>
+
+</body>
+</html>
